@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hl6-vL-y03">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="AboutViewController" customModule="IST_Department" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="info.circle" catalog="system" id="HDv-07-5dB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844.9275362318842" y="50.892857142857139"/>
+        </scene>
+        <!--People View Controller-->
+        <scene sceneID="jyS-BX-K5i">
+            <objects>
+                <viewController id="VlS-2Z-7Q2" customClass="PeopleViewController" customModule="IST_Department" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Gsq-p3-4Ru">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="7nt-pu-Rjn">
+                            <rect key="frame" x="143.5" y="5.5" width="127" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Faculty"/>
+                                <segment title="Staff"/>
+                            </segments>
+                            <connections>
+                                <action selector="refreshButtonTappedWithSender:" destination="VlS-2Z-7Q2" eventType="valueChanged" id="ztU-4f-BUt"/>
+                                <action selector="segmentedControlActionChangedWithSender:" destination="VlS-2Z-7Q2" eventType="valueChanged" id="XFY-Jt-wgj"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="7nt-pu-Rjn" id="Kaf-lT-vyL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n5x-1Y-amN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.82608695652186" y="837.72321428571422"/>
+        </scene>
+        <!--People Detail View Controller-->
+        <scene sceneID="LMK-kT-yTK">
+            <objects>
+                <viewController storyboardIdentifier="faculty" id="ba3-hp-BYq" customClass="PeopleDetailViewController" customModule="IST_Department" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPl-wo-g6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1845" y="838"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="oWv-tL-jeC">
+            <objects>
+                <viewController storyboardIdentifier="segunLogin" id="pue-ZF-42d" customClass="LoginViewController" customModule="IST_Department" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Login" id="xpQ-r9-kfI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDy-aH-PEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39.130434782608695" y="76.339285714285708"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nhc-3J-m82">
+            <objects>
+                <tabBarController storyboardIdentifier="segunTab" automaticallyAdjustsScrollViewInsets="NO" id="YAq-qp-z97" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="SQ6-Nf-HUZ"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lal-hE-gaZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="glO-SJ-gAY"/>
+                        <segue destination="hrO-6C-jh6" kind="relationship" relationship="viewControllers" id="xKA-GW-t4z"/>
+                        <segue destination="ea2-TD-zdh" kind="relationship" relationship="viewControllers" id="hlm-0t-NbP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tf1-j3-Wv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934.78260869565224" y="50.892857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bvJ-VT-NPI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hl6-vL-y03" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k2J-zl-B4l">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pue-ZF-42d" kind="relationship" relationship="rootViewController" id="7vP-0f-cD9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="noT-zA-3kF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-871.01449275362324" y="76.339285714285708"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="IL9-0Z-0K9">
+            <objects>
+                <viewController id="UTh-xN-fnj" customClass="MenuViewController" customModule="IST_Department" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zu0-Sz-TfG">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="XwQ-kG-O92">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gZc-WN-b6I">
+                                <rect key="frame" x="320" y="11" width="74" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="2"/>
+                                <state key="normal" title="Button" image="power" catalog="system"/>
+                                <connections>
+                                    <action selector="logout:" destination="UTh-xN-fnj" eventType="touchUpInside" id="FhY-uH-ufR"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GH3-Fw-LLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844.9275362318842" y="-658.25892857142856"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="AfQ-I3-yqv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hrO-6C-jh6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="People" image="person.3" catalog="system" id="wW8-1Y-08H"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WOU-IX-6eo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VlS-2Z-7Q2" kind="relationship" relationship="rootViewController" id="sf9-LR-10E"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gD2-oE-Ie4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="837.72321428571422"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="mPo-Ky-nlO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ea2-TD-zdh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Menu" image="list.dash" catalog="system" id="NMy-ua-hPa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a3Y-l6-ybB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UTh-xN-fnj" kind="relationship" relationship="rootViewController" id="A1v-fy-PB1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pOc-bd-Flj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934.78260869565224" y="-658.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <image name="power" catalog="system" width="128" height="124"/>
+    </resources>
+</document>

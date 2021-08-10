@@ -19,25 +19,10 @@
         <!--People View Controller-->
         <scene sceneID="jyS-BX-K5i">
             <objects>
-                <viewController id="VlS-2Z-7Q2" customClass="PeopleViewController" customModule="IST_Department" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="people" id="VlS-2Z-7Q2" customClass="PeopleViewController" customModule="IST_Department" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Gsq-p3-4Ru">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="7nt-pu-Rjn">
-                            <rect key="frame" x="143.5" y="5.5" width="127" height="33"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="Faculty"/>
-                                <segment title="Staff"/>
-                            </segments>
-                            <connections>
-                                <action selector="refreshButtonTappedWithSender:" destination="VlS-2Z-7Q2" eventType="valueChanged" id="ztU-4f-BUt"/>
-                                <action selector="segmentedControlActionChangedWithSender:" destination="VlS-2Z-7Q2" eventType="valueChanged" id="XFY-Jt-wgj"/>
-                            </connections>
-                        </segmentedControl>
                     </navigationItem>
-                    <connections>
-                        <outlet property="segmentedControl" destination="7nt-pu-Rjn" id="Kaf-lT-vyL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n5x-1Y-amN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,10 +31,12 @@
         <!--People Detail View Controller-->
         <scene sceneID="LMK-kT-yTK">
             <objects>
-                <viewController storyboardIdentifier="faculty" id="ba3-hp-BYq" customClass="PeopleDetailViewController" customModule="IST_Department" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController storyboardIdentifier="peopleDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ba3-hp-BYq" customClass="PeopleDetailViewController" customModule="IST_Department" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9eB-Zg-00o"/>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OPl-wo-g6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1845" y="838"/>
+            <point key="canvasLocation" x="2826.0869565217395" y="837.72321428571422"/>
         </scene>
         <!--Login-->
         <scene sceneID="oWv-tL-jeC">
@@ -59,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDy-aH-PEW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="39.130434782608695" y="76.339285714285708"/>
+            <point key="canvasLocation" x="-743" y="838"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nhc-3J-m82">
@@ -74,7 +61,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="glO-SJ-gAY"/>
-                        <segue destination="hrO-6C-jh6" kind="relationship" relationship="viewControllers" id="xKA-GW-t4z"/>
                         <segue destination="ea2-TD-zdh" kind="relationship" relationship="viewControllers" id="hlm-0t-NbP"/>
                     </connections>
                 </tabBarController>
@@ -98,12 +84,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="noT-zA-3kF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-871.01449275362324" y="76.339285714285708"/>
+            <point key="canvasLocation" x="-1578" y="838"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Menu2 View Controller-->
         <scene sceneID="IL9-0Z-0K9">
             <objects>
-                <viewController id="UTh-xN-fnj" customClass="MenuViewController" customModule="IST_Department" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UTh-xN-fnj" customClass="Menu2ViewController" customModule="IST_Department" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="zu0-Sz-TfG">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="XwQ-kG-O92">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gZc-WN-b6I">
@@ -112,7 +98,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="2"/>
                                 <state key="normal" title="Button" image="power" catalog="system"/>
                                 <connections>
-                                    <action selector="logout:" destination="UTh-xN-fnj" eventType="touchUpInside" id="FhY-uH-ufR"/>
+                                    <action selector="logout:" destination="UTh-xN-fnj" eventType="touchUpInside" id="uDH-Zo-FGw"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -120,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GH3-Fw-LLG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844.9275362318842" y="-658.25892857142856"/>
+            <point key="canvasLocation" x="3599" y="51"/>
         </scene>
         <!--People-->
         <scene sceneID="AfQ-I3-yqv">
@@ -158,7 +144,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOc-bd-Flj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934.78260869565224" y="-658.25892857142856"/>
+            <point key="canvasLocation" x="2717" y="51"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jF8-cQ-ssj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hNX-29-a1s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Ub-k8-6Ec">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ba3-hp-BYq" kind="relationship" relationship="rootViewController" id="do9-VH-h3x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O6K-wJ-YYr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1915.9420289855075" y="837.72321428571422"/>
         </scene>
     </scenes>
     <resources>

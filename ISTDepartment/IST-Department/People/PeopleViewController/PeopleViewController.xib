@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PeopleViewController" customModule="IST_Department" customModuleProvider="target">
             <connections>
                 <outlet property="collectionV" destination="mKh-0y-dea" id="U7T-fx-9g5"/>
+                <outlet property="segmentedControl" destination="XDg-7H-m2X" id="MI3-ha-kec"/>
                 <outlet property="subTitleLab" destination="2wg-rE-gQq" id="Opr-3Z-aB9"/>
                 <outlet property="titleLab" destination="ZmF-sm-9eh" id="NSK-aK-sEn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -22,21 +23,21 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmF-sm-9eh">
-                    <rect key="frame" x="20" y="56" width="374" height="34"/>
+                    <rect key="frame" x="20" y="102" width="374" height="24"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="374" id="Ci7-TC-ZXF"/>
-                        <constraint firstAttribute="height" constant="34" id="xEq-pL-H2y"/>
+                        <constraint firstAttribute="width" constant="374" id="AMd-cQ-XTg"/>
+                        <constraint firstAttribute="height" constant="24" id="do3-Uy-wQe"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-0y-dea">
-                    <rect key="frame" x="20" y="175" width="374" height="687"/>
+                    <rect key="frame" x="20" y="197" width="374" height="665"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="687" id="Lpx-al-mmD"/>
-                        <constraint firstAttribute="width" constant="374" id="nub-IV-SM9"/>
+                        <constraint firstAttribute="height" constant="665" id="6IS-F0-I6r"/>
+                        <constraint firstAttribute="width" constant="374" id="RI4-Kj-puV"/>
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Naw-mL-xLy">
                         <size key="itemSize" width="128" height="128"/>
@@ -50,11 +51,25 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </collectionView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wg-rE-gQq">
-                    <rect key="frame" x="20" y="113" width="374" height="40"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XDg-7H-m2X">
+                    <rect key="frame" x="20" y="54" width="374" height="31"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="374" id="MEv-uF-ZG5"/>
-                        <constraint firstAttribute="height" constant="40" id="sMq-V8-Vul"/>
+                        <constraint firstAttribute="height" constant="30" id="Wk9-3i-cb6"/>
+                        <constraint firstAttribute="width" constant="374" id="pSq-sV-sXp"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Faculty"/>
+                        <segment title="Staff"/>
+                    </segments>
+                    <connections>
+                        <action selector="refreshButtonTappedWithSender:" destination="-1" eventType="valueChanged" id="b6u-OF-wLU"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wg-rE-gQq">
+                    <rect key="frame" x="20" y="152" width="374" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="29" id="67G-V9-xWA"/>
+                        <constraint firstAttribute="width" constant="374" id="ZRq-rq-1NG"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <nil key="textColor"/>
@@ -64,16 +79,19 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mKh-0y-dea" secondAttribute="trailing" constant="20" id="B0E-hx-02v"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZmF-sm-9eh" secondAttribute="trailing" constant="20" id="Ctl-3E-BJ8"/>
-                <constraint firstItem="mKh-0y-dea" firstAttribute="top" secondItem="2wg-rE-gQq" secondAttribute="bottom" constant="22" id="WQr-Yb-CN6"/>
-                <constraint firstItem="ZmF-sm-9eh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="12" id="eYn-gE-Ywp"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2wg-rE-gQq" secondAttribute="trailing" constant="20" id="h0o-YA-cbT"/>
-                <constraint firstItem="ZmF-sm-9eh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="pBg-rD-MIZ"/>
-                <constraint firstItem="2wg-rE-gQq" firstAttribute="top" secondItem="ZmF-sm-9eh" secondAttribute="bottom" constant="23" id="q60-U3-6OW"/>
-                <constraint firstItem="mKh-0y-dea" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="teB-Qe-MOI"/>
-                <constraint firstItem="2wg-rE-gQq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="thl-IB-suu"/>
-                <constraint firstItem="mKh-0y-dea" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ujQ-8a-qc3"/>
+                <constraint firstItem="XDg-7H-m2X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="4KQ-Xm-h1o"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZmF-sm-9eh" secondAttribute="trailing" constant="20" id="4vU-2s-15u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XDg-7H-m2X" secondAttribute="trailing" constant="20" id="HUX-YD-dQH"/>
+                <constraint firstItem="ZmF-sm-9eh" firstAttribute="top" secondItem="XDg-7H-m2X" secondAttribute="bottom" constant="18" id="Ig1-Yz-289"/>
+                <constraint firstItem="2wg-rE-gQq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="NS2-t2-XJQ"/>
+                <constraint firstItem="mKh-0y-dea" firstAttribute="top" secondItem="2wg-rE-gQq" secondAttribute="bottom" constant="16" id="OXB-8e-ptr"/>
+                <constraint firstItem="ZmF-sm-9eh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="S17-Bg-Vz6"/>
+                <constraint firstItem="mKh-0y-dea" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="T0M-yP-s91"/>
+                <constraint firstItem="XDg-7H-m2X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="XHI-RV-ykv"/>
+                <constraint firstItem="2wg-rE-gQq" firstAttribute="top" secondItem="ZmF-sm-9eh" secondAttribute="bottom" constant="26" id="e9W-wB-hph"/>
+                <constraint firstItem="mKh-0y-dea" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="j16-Xo-8VO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mKh-0y-dea" secondAttribute="trailing" constant="20" id="mky-0g-5pH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2wg-rE-gQq" secondAttribute="trailing" constant="20" id="xld-Dg-Ccn"/>
             </constraints>
             <point key="canvasLocation" x="24.637681159420293" y="65.625"/>
         </view>

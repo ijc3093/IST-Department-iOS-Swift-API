@@ -24,6 +24,11 @@
 		591A8E9526BE6D5600A2C9EF /* StaffDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591A8E9326BE6D5600A2C9EF /* StaffDetailViewController.xib */; };
 		5994D74326C0A2AF001A5E2D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D74126C0A2AF001A5E2D /* MenuViewController.swift */; };
 		5994D74426C0A2AF001A5E2D /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5994D74226C0A2AF001A5E2D /* MenuViewController.xib */; };
+		5994D74726C0C518001A5E2D /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D74526C0C518001A5E2D /* MenuTableViewCell.swift */; };
+		5994D74826C0C518001A5E2D /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5994D74626C0C518001A5E2D /* MenuTableViewCell.xib */; };
+		5994D74A26C0C68A001A5E2D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D74926C0C68A001A5E2D /* TableViewController.swift */; };
+		5994D74F26C20B97001A5E2D /* Menu2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D74D26C20B97001A5E2D /* Menu2ViewController.swift */; };
+		5994D75026C20B97001A5E2D /* Menu2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5994D74E26C20B97001A5E2D /* Menu2ViewController.xib */; };
 		59B0538426BB7F9C009B237A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B0538326BB7F9C009B237A /* AppDelegate.swift */; };
 		59B0538626BB7F9C009B237A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B0538526BB7F9C009B237A /* SceneDelegate.swift */; };
 		59B0538826BB7F9C009B237A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B0538726BB7F9C009B237A /* ViewController.swift */; };
@@ -56,6 +61,11 @@
 		591A8E9326BE6D5600A2C9EF /* StaffDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaffDetailViewController.xib; sourceTree = "<group>"; };
 		5994D74126C0A2AF001A5E2D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		5994D74226C0A2AF001A5E2D /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		5994D74526C0C518001A5E2D /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		5994D74626C0C518001A5E2D /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		5994D74926C0C68A001A5E2D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5994D74D26C20B97001A5E2D /* Menu2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu2ViewController.swift; sourceTree = "<group>"; };
+		5994D74E26C20B97001A5E2D /* Menu2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Menu2ViewController.xib; sourceTree = "<group>"; };
 		59B0538026BB7F9C009B237A /* IST-Department.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IST-Department.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B0538326BB7F9C009B237A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59B0538526BB7F9C009B237A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +175,11 @@
 			children = (
 				5994D74126C0A2AF001A5E2D /* MenuViewController.swift */,
 				5994D74226C0A2AF001A5E2D /* MenuViewController.xib */,
+				5994D74526C0C518001A5E2D /* MenuTableViewCell.swift */,
+				5994D74626C0C518001A5E2D /* MenuTableViewCell.xib */,
+				5994D74926C0C68A001A5E2D /* TableViewController.swift */,
+				5994D74D26C20B97001A5E2D /* Menu2ViewController.swift */,
+				5994D74E26C20B97001A5E2D /* Menu2ViewController.xib */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -305,9 +320,11 @@
 				5904169C26BC5B3900685348 /* PeopleViewController.xib in Resources */,
 				590416A526BCA4B300685348 /* LoginViewController.xib in Resources */,
 				5994D74426C0A2AF001A5E2D /* MenuViewController.xib in Resources */,
+				5994D74826C0C518001A5E2D /* MenuTableViewCell.xib in Resources */,
 				59B63DFA26BF5195002ADD24 /* PeopleDetailViewController.xib in Resources */,
 				591A8E9026BE64AC00A2C9EF /* StaffCollectionViewCell.xib in Resources */,
 				590416A026BC661300685348 /* PeopleCollectionViewCell.xib in Resources */,
+				5994D75026C20B97001A5E2D /* Menu2ViewController.xib in Resources */,
 				591A8E8C26BE644800A2C9EF /* StaffViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +338,7 @@
 			files = (
 				590416A426BCA4B300685348 /* LoginViewController.swift in Sources */,
 				5904169226BC537C00685348 /* servicePeople.swift in Sources */,
+				5994D74F26C20B97001A5E2D /* Menu2ViewController.swift in Sources */,
 				591A8E8F26BE64AC00A2C9EF /* StaffCollectionViewCell.swift in Sources */,
 				59B053A026BB8193009B237A /* AboutViewController.swift in Sources */,
 				59B63DF926BF5195002ADD24 /* PeopleDetailViewController.swift in Sources */,
@@ -332,7 +350,9 @@
 				59B0538826BB7F9C009B237A /* ViewController.swift in Sources */,
 				5994D74326C0A2AF001A5E2D /* MenuViewController.swift in Sources */,
 				59B0539B26BB8089009B237A /* About.swift in Sources */,
+				5994D74A26C0C68A001A5E2D /* TableViewController.swift in Sources */,
 				591A8E8B26BE644800A2C9EF /* StaffViewController.swift in Sources */,
+				5994D74726C0C518001A5E2D /* MenuTableViewCell.swift in Sources */,
 				59B0538426BB7F9C009B237A /* AppDelegate.swift in Sources */,
 				59B0538626BB7F9C009B237A /* SceneDelegate.swift in Sources */,
 				5904169F26BC661300685348 /* PeopleCollectionViewCell.swift in Sources */,

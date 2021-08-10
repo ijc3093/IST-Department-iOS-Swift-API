@@ -135,23 +135,24 @@ class PeopleViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let detailVC = self.storyboard?.instantiateViewController(identifier: "faculty") as? PeopleDetailViewController
+        //let detailVC = self.storyboard?.instantiateViewController(withIdentifier: "peopleDetail") as? PeopleDetailViewController
+        let detailVC = PeopleDetailViewController()
         if(segmentedControl.selectedSegmentIndex == 0){
             
-            detailVC!.fa = facu.peopleArray.faculty[indexPath.row]
-            print(detailVC!)
             
+            detailVC.fa = facu.peopleArray.faculty[indexPath.row]
+            print(detailVC)
+
             //popover
-            detailVC!.modalPresentationStyle = .popover
-            self.present(detailVC!, animated: true)
+            self.navigationController?.pushViewController(detailVC, animated: true)
         }
         else if(segmentedControl.selectedSegmentIndex == 1){
-            detailVC!.staf = facu.peopleArray.staff[indexPath.row]
-            print(detailVC!)
-            
+            detailVC.staf = facu.peopleArray.staff[indexPath.row]
+            print(detailVC)
+
             //popover
-            detailVC!.modalPresentationStyle = .popover
-            self.present(detailVC!, animated: true)
+            detailVC.modalPresentationStyle = .popover
+            self.present(detailVC, animated: true)
         }
         
     }

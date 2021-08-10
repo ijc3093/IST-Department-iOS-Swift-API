@@ -17,7 +17,7 @@
                 <outlet property="phoneLabel" destination="KaD-MX-GtO" id="kZu-Ul-Ls4"/>
                 <outlet property="titleLabel" destination="jC6-qG-XsG" id="ddx-zb-ObQ"/>
                 <outlet property="usernameLabel" destination="jt9-lO-Nvt" id="yau-uO-eWe"/>
-                <outlet property="view" destination="aaW-Np-slf" id="dYY-ge-MIx"/>
+                <outlet property="view" destination="aaW-Np-slf" id="1xb-59-B4b"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

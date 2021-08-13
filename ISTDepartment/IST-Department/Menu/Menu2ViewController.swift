@@ -25,7 +25,7 @@ class Menu2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         tableView.tableFooterView = UIView()
 
         names.append("People")
-        names.append("Degress")
+        names.append("Degrees")
         names.append("Minors")
         names.append("Employment")
         names.append("Research")
@@ -78,6 +78,10 @@ class Menu2ViewController: UIViewController, UITableViewDelegate, UITableViewDat
         case "People":
             let peopleVC = PeopleViewController()
             navigationController?.pushViewController(peopleVC, animated: true)
+            
+        case "Degrees":
+            let degreesVC = DegreesViewController()
+            navigationController?.pushViewController(degreesVC, animated: true)
             
         default:
             break

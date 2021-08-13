@@ -29,6 +29,16 @@
 		5994D74A26C0C68A001A5E2D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D74926C0C68A001A5E2D /* TableViewController.swift */; };
 		5994D74F26C20B97001A5E2D /* Menu2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D74D26C20B97001A5E2D /* Menu2ViewController.swift */; };
 		5994D75026C20B97001A5E2D /* Menu2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5994D74E26C20B97001A5E2D /* Menu2ViewController.xib */; };
+		5994D75E26C2F775001A5E2D /* serviceDegree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D75D26C2F775001A5E2D /* serviceDegree.swift */; };
+		5994D76026C2F7A2001A5E2D /* modelDegree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D75F26C2F7A2001A5E2D /* modelDegree.swift */; };
+		5994D77A26C366E1001A5E2D /* DegreesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D77826C366E1001A5E2D /* DegreesViewController.swift */; };
+		5994D77B26C366E1001A5E2D /* DegreesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5994D77926C366E1001A5E2D /* DegreesViewController.xib */; };
+		5994D77E26C36806001A5E2D /* DegreeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D77C26C36806001A5E2D /* DegreeCollectionViewCell.swift */; };
+		5994D77F26C36806001A5E2D /* DegreeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5994D77D26C36806001A5E2D /* DegreeCollectionViewCell.xib */; };
+		5994D7E226C4D8BA001A5E2D /* DegreesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D7E026C4D8BA001A5E2D /* DegreesDetailViewController.swift */; };
+		5994D7E326C4D8BA001A5E2D /* DegreesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5994D7E126C4D8BA001A5E2D /* DegreesDetailViewController.xib */; };
+		5994D7E726C4E332001A5E2D /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5994D7E526C4E332001A5E2D /* DetailTableViewCell.swift */; };
+		5994D7E826C4E332001A5E2D /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5994D7E626C4E332001A5E2D /* DetailTableViewCell.xib */; };
 		59B0538426BB7F9C009B237A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B0538326BB7F9C009B237A /* AppDelegate.swift */; };
 		59B0538626BB7F9C009B237A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B0538526BB7F9C009B237A /* SceneDelegate.swift */; };
 		59B0538826BB7F9C009B237A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B0538726BB7F9C009B237A /* ViewController.swift */; };
@@ -66,6 +76,16 @@
 		5994D74926C0C68A001A5E2D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5994D74D26C20B97001A5E2D /* Menu2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu2ViewController.swift; sourceTree = "<group>"; };
 		5994D74E26C20B97001A5E2D /* Menu2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Menu2ViewController.xib; sourceTree = "<group>"; };
+		5994D75D26C2F775001A5E2D /* serviceDegree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = serviceDegree.swift; sourceTree = "<group>"; };
+		5994D75F26C2F7A2001A5E2D /* modelDegree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelDegree.swift; sourceTree = "<group>"; };
+		5994D77826C366E1001A5E2D /* DegreesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreesViewController.swift; sourceTree = "<group>"; };
+		5994D77926C366E1001A5E2D /* DegreesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DegreesViewController.xib; sourceTree = "<group>"; };
+		5994D77C26C36806001A5E2D /* DegreeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreeCollectionViewCell.swift; sourceTree = "<group>"; };
+		5994D77D26C36806001A5E2D /* DegreeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DegreeCollectionViewCell.xib; sourceTree = "<group>"; };
+		5994D7E026C4D8BA001A5E2D /* DegreesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreesDetailViewController.swift; sourceTree = "<group>"; };
+		5994D7E126C4D8BA001A5E2D /* DegreesDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DegreesDetailViewController.xib; sourceTree = "<group>"; };
+		5994D7E526C4E332001A5E2D /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		5994D7E626C4E332001A5E2D /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		59B0538026BB7F9C009B237A /* IST-Department.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IST-Department.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B0538326BB7F9C009B237A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59B0538526BB7F9C009B237A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -184,6 +204,63 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		5994D75126C2F151001A5E2D /* Degrees */ = {
+			isa = PBXGroup;
+			children = (
+				5994D7D726C4CC52001A5E2D /* DegreesDetails */,
+				5994D75C26C2F6C6001A5E2D /* serviceDegree */,
+				5994D75B26C2F6BA001A5E2D /* modelDegree */,
+				5994D75626C2F1BB001A5E2D /* Cell */,
+				5994D77826C366E1001A5E2D /* DegreesViewController.swift */,
+				5994D77926C366E1001A5E2D /* DegreesViewController.xib */,
+			);
+			path = Degrees;
+			sourceTree = "<group>";
+		};
+		5994D75626C2F1BB001A5E2D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5994D77C26C36806001A5E2D /* DegreeCollectionViewCell.swift */,
+				5994D77D26C36806001A5E2D /* DegreeCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5994D75B26C2F6BA001A5E2D /* modelDegree */ = {
+			isa = PBXGroup;
+			children = (
+				5994D75F26C2F7A2001A5E2D /* modelDegree.swift */,
+			);
+			path = modelDegree;
+			sourceTree = "<group>";
+		};
+		5994D75C26C2F6C6001A5E2D /* serviceDegree */ = {
+			isa = PBXGroup;
+			children = (
+				5994D75D26C2F775001A5E2D /* serviceDegree.swift */,
+			);
+			path = serviceDegree;
+			sourceTree = "<group>";
+		};
+		5994D7D726C4CC52001A5E2D /* DegreesDetails */ = {
+			isa = PBXGroup;
+			children = (
+				5994D7E426C4E2BE001A5E2D /* DetailCell */,
+				5994D7E026C4D8BA001A5E2D /* DegreesDetailViewController.swift */,
+				5994D7E126C4D8BA001A5E2D /* DegreesDetailViewController.xib */,
+			);
+			path = DegreesDetails;
+			sourceTree = "<group>";
+		};
+		5994D7E426C4E2BE001A5E2D /* DetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				5994D7E526C4E332001A5E2D /* DetailTableViewCell.swift */,
+				5994D7E626C4E332001A5E2D /* DetailTableViewCell.xib */,
+			);
+			path = DetailCell;
+			sourceTree = "<group>";
+		};
 		59B0537726BB7F9C009B237A = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +280,7 @@
 		59B0538226BB7F9C009B237A /* IST-Department */ = {
 			isa = PBXGroup;
 			children = (
+				5994D75126C2F151001A5E2D /* Degrees */,
 				5994D74026C0A23A001A5E2D /* Menu */,
 				590416A126BCA45A00685348 /* Login */,
 				5904168E26BC528100685348 /* People */,
@@ -312,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5994D77F26C36806001A5E2D /* DegreeCollectionViewCell.xib in Resources */,
 				59B0539026BB7FA3009B237A /* LaunchScreen.storyboard in Resources */,
 				591A8E9526BE6D5600A2C9EF /* StaffDetailViewController.xib in Resources */,
 				59B0538D26BB7FA3009B237A /* Assets.xcassets in Resources */,
@@ -321,11 +400,14 @@
 				590416A526BCA4B300685348 /* LoginViewController.xib in Resources */,
 				5994D74426C0A2AF001A5E2D /* MenuViewController.xib in Resources */,
 				5994D74826C0C518001A5E2D /* MenuTableViewCell.xib in Resources */,
+				5994D7E826C4E332001A5E2D /* DetailTableViewCell.xib in Resources */,
 				59B63DFA26BF5195002ADD24 /* PeopleDetailViewController.xib in Resources */,
 				591A8E9026BE64AC00A2C9EF /* StaffCollectionViewCell.xib in Resources */,
 				590416A026BC661300685348 /* PeopleCollectionViewCell.xib in Resources */,
 				5994D75026C20B97001A5E2D /* Menu2ViewController.xib in Resources */,
+				5994D77B26C366E1001A5E2D /* DegreesViewController.xib in Resources */,
 				591A8E8C26BE644800A2C9EF /* StaffViewController.xib in Resources */,
+				5994D7E326C4D8BA001A5E2D /* DegreesDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,15 +423,21 @@
 				5994D74F26C20B97001A5E2D /* Menu2ViewController.swift in Sources */,
 				591A8E8F26BE64AC00A2C9EF /* StaffCollectionViewCell.swift in Sources */,
 				59B053A026BB8193009B237A /* AboutViewController.swift in Sources */,
+				5994D75E26C2F775001A5E2D /* serviceDegree.swift in Sources */,
 				59B63DF926BF5195002ADD24 /* PeopleDetailViewController.swift in Sources */,
 				5904169426BC538E00685348 /* modelPeople.swift in Sources */,
 				59B053A326BBCB2B009B237A /* AboutUIView.swift in Sources */,
+				5994D76026C2F7A2001A5E2D /* modelDegree.swift in Sources */,
 				59B0539D26BB80A5009B237A /* serviceAbout.swift in Sources */,
 				5904169B26BC5B3900685348 /* PeopleViewController.swift in Sources */,
+				5994D77E26C36806001A5E2D /* DegreeCollectionViewCell.swift in Sources */,
 				591A8E9426BE6D5600A2C9EF /* StaffDetailViewController.swift in Sources */,
 				59B0538826BB7F9C009B237A /* ViewController.swift in Sources */,
 				5994D74326C0A2AF001A5E2D /* MenuViewController.swift in Sources */,
+				5994D7E726C4E332001A5E2D /* DetailTableViewCell.swift in Sources */,
+				5994D77A26C366E1001A5E2D /* DegreesViewController.swift in Sources */,
 				59B0539B26BB8089009B237A /* About.swift in Sources */,
+				5994D7E226C4D8BA001A5E2D /* DegreesDetailViewController.swift in Sources */,
 				5994D74A26C0C68A001A5E2D /* TableViewController.swift in Sources */,
 				591A8E8B26BE644800A2C9EF /* StaffViewController.swift in Sources */,
 				5994D74726C0C518001A5E2D /* MenuTableViewCell.swift in Sources */,

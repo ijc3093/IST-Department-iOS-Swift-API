@@ -15,8 +15,6 @@ class PeopleViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet var subTitleLab: UILabel!
     @IBOutlet var collectionV: UICollectionView!
     
-    var window: UIWindow?
-    
     var facu = servicePeople()
     
     //var fac = [Faculty]()

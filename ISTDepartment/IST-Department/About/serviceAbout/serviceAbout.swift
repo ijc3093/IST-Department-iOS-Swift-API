@@ -36,7 +36,7 @@ class serviceAbout{
             //deal with the data
             do{
                 self.aboutArray = try JSONDecoder().decode(Returned.self, from: data!)
-                print("Herb is what we returned \(String(describing: self.aboutArray))")
+                print("Here is what we returned \(String(describing: self.aboutArray))")
             }catch{
                 print(" JOSN ERROR: \(error.localizedDescription)")
             }

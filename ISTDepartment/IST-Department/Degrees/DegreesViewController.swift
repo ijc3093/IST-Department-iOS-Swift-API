@@ -36,6 +36,7 @@ class DegreesViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         //view.backgroundColor = .orange
         collectionView1.register(UINib(nibName: "DegreeCollectionViewCell", bundle: Bundle.main), forCellWithReuseIdentifier: "DegreeCollectionViewCell")
+        
         collectionView2.register(UINib(nibName: "DegreeCollectionViewCell", bundle: Bundle.main), forCellWithReuseIdentifier: "DegreeCollectionViewCell")
         // Do any additional setup after loading the view.
         
@@ -44,7 +45,10 @@ class DegreesViewController: UIViewController, UICollectionViewDelegate, UIColle
             self.collectionView1.reloadData()
             self.collectionView2.reloadData()
             
+            //underg
             self.underg = self.degr.degreeArray.undergraduate
+            
+            //grad
             self.grad = self.degr.degreeArray.graduate
            }
        }
@@ -57,9 +61,12 @@ class DegreesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
+        //underg
         if collectionView == collectionView {
             return underg.count
-        }else if collectionView == collectionView2{
+        }
+        //grad
+        else if collectionView == collectionView2{
             return grad.count
         }
         return 0
@@ -67,12 +74,13 @@ class DegreesViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DegreeCollectionViewCell", for: indexPath) as! DegreeCollectionViewCell
-        
+        //underg
         if collectionView == collectionView1 {
             cell.degreeName.text = underg[indexPath.row].degreeName
             cell.imageV.image = UIImage(named: Images[indexPath.row])
             cell.degreeName.textColor = .white
-
+            
+        //grad
         }else if collectionView == collectionView2{
             cell.degreeName.text = grad[indexPath.row].degreeName
             cell.imageV.image = UIImage(named: Images2[indexPath.row])
